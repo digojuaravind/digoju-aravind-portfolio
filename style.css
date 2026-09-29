@@ -77,6 +77,27 @@ h1 span {
 .quick-links { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 25px; color: var(--muted); font-size: .84rem; }
 .quick-links a:hover { color: var(--text); }
 .hero-card { position: relative; min-height: 430px; display: grid; place-items: center; }
+.profile-photo {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  width: 145px;
+  height: 145px;
+  padding: 5px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 15px 45px rgba(0, 0, 0, .35);
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 4px solid var(--bg);
+}
 .orb { position: absolute; border-radius: 50%; filter: blur(4px); }
 .orb-one { width: 260px; height: 260px; background: rgba(124,92,255,.20); top: 15%; left: 8%; }
 .orb-two { width: 180px; height: 180px; background: rgba(0,212,255,.14); bottom: 12%; right: 5%; }
