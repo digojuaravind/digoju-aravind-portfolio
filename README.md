@@ -1,5 +1,11 @@
 # Digoju Aravind — Portfolio Website
 
+## 🌐 Live Portfolio
+
+👉 [**Visit My Portfolio Website**](https://digojuaravind.github.io/digoju-aravind-portfolio/)
+
+Welcome to my personal portfolio. Here you can explore my skills,
+projects, education, achievements, and contact information.
 A responsive personal portfolio website built with **HTML, CSS and JavaScript** and prepared for deployment with **GitHub Pages**.
 
 ## Included
