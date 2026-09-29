@@ -56,3 +56,24 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+
+// Contact buttons: open Gmail compose and the phone dialer.
+const GMAIL_ADDRESS = "digojuaravind369@gmail.com";
+const PHONE_NUMBER = "+918074140293";
+
+const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&tf=1&authuser=${encodeURIComponent(GMAIL_ADDRESS)}&to=${encodeURIComponent(GMAIL_ADDRESS)}&su=${encodeURIComponent("Portfolio Contact")}`;
+
+document.querySelectorAll(".email-link").forEach(link => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.location.href = gmailComposeUrl;
+  });
+});
+
+document.querySelectorAll(".phone-link").forEach(link => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.location.href = `tel:${PHONE_NUMBER}`;
+  });
+});
